@@ -1,0 +1,14 @@
+# 🚨 Don't change the code below 👇
+age = input("What is your current age?")
+# 🚨 Don't change the code above 👆
+
+#First *fork* your copy. Then copy-paste your code below this line 👇
+#Finally click "Run" to execute the tests
+
+ninety = 90 - int(age)
+
+days = ninety * 365
+weeks = ninety *52
+months = ninety * 12
+
+print(f"You have {days} days, {weeks} weeks, and {months} months left.")
