@@ -4,6 +4,7 @@
 #Tip: There are 2 ways to round a number. You might have to do some Googling to solve this.💪
 #HINT 1: https://www.google.com/search?q=how+to+round+number+to+2+decimal+places+python&oq=how+to+round+number+to+2+decimal
 #HINT 2: https://www.kite.com/python/answers/how-to-limit-a-float-to-two-decimal-places-in-python
+
 print("Welcome to the Tip Calculator")
 total = float(input("What is your total bill? "))
 percentage = float(input("What percentage tip would you like to give? 10, 12, or 15? "))
@@ -11,5 +12,7 @@ people = float(input("How many people to split the bill? "))
 
 tip = (total/people)+(total/people*percentage/100)
 
+tipfinal = "{:.2f}".format(tip)
+print(f"Each person should pay: ${tipfinal}")
 
-print(f" Each person should pay: {round(tip,2)}")
+# the "{:.2f} is a format function that basically says to add two characters, after the period#
